@@ -482,4 +482,3 @@ elif simulation_mode == "Perbandingan Gas":
                 'Deviasi (%)': f"{deviation:.2f}%"
             })
         
-        comparison
