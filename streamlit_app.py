@@ -5,6 +5,15 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import math
+import requests
+from streamlit_lottie import st_lottie
+
+# Fungsi untuk memuat animasi Lottie dari URL
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 # Konfigurasi halaman
 st.set_page_config(
