@@ -50,6 +50,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar untuk kontrol utama
+ lottie_json = load_lottieurl("https://lottie.host/4c738dc6-b583-4fec-8fc8-872106791b3b/Xjm5xqRaFf.json")
+    if lottie_json:
+        st_lottie(lottie_json, height=53, key="side bar")
 st.sidebar.header("🎛️ Kontrol Utama")
 simulation_mode = st.sidebar.selectbox(
     "Pilih Mode Simulasi",
